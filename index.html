@@ -264,14 +264,8 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 text-center">
-					<div class="social-icon">
-						<!-- <a href="#">
-							<div class="icon fb">
-								<i class="ion-social-facebook"></i>
-							</div>
-						</a> -->
-					</div>		
+				<div class="widget">
+					<span id="top100_widget"></span>
 				</div>
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
@@ -279,11 +273,11 @@
 	
 
 
-	<script async src="gh-pages/assets/js/jquery-1.11.2.min.js"></script>
-    <script async src="gh-pages/assets/js/bootstrap.min.js"></script>
+	<script src="gh-pages/assets/js/jquery-1.11.2.min.js"></script>
+    <script src="gh-pages/assets/js/bootstrap.min.js"></script>
     <script src="gh-pages/assets/js/owl.carousel.min.js"></script>
-    <script async src="gh-pages/assets/js/contact.js"></script>
-	<script async src="gh-pages/assets/js/script.js"></script>
+    <script src="gh-pages/assets/js/contact.js"></script>
+	<script src="gh-pages/assets/js/script.js"></script>
 
 	<script>
 		(function(i,s,o,g,r,a,m){
@@ -294,13 +288,42 @@
 		  a.async=1;
 		  a.src=g;
 		  m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-135091934-1', 'auto');
 		ga('send', 'pageview');
 	</script>
 
+	<!-- Top100 (Kraken) Counter -->
+	<script>
+	    (function (w, d, c) {
+	    (w[c] = w[c] || []).push(function() {
+	        var options = {
+	            project: 6544942,
+	            element: 'top100_widget',
+	        };
+	        try {
+	            w.top100Counter = new top100(options);
+	        } catch(e) { }
+	    });
+	    var n = d.getElementsByTagName("script")[0],
+	    s = d.createElement("script"),
+	    f = function () { n.parentNode.insertBefore(s, n); };
+	    s.type = "text/javascript";
+	    s.async = true;
+	    s.src =
+	    (d.location.protocol == "https:" ? "https:" : "http:") +
+	    "//st.top100.ru/top100/top100.js";
 
+	    if (w.opera == "[object Opera]") {
+	    d.addEventListener("DOMContentLoaded", f, false);
+	} else { f(); }
+	})(window, document, "_top100q");
+	</script>
+	<noscript>
+	  <img src="//counter.rambler.ru/top100.cnt?pid=6544942" alt="Топ-100" />
+	</noscript>
+	<!-- END Top100 (Kraken) Counter -->
 
 </body>
 </html>

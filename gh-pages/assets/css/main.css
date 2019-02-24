@@ -228,7 +228,7 @@ body
 ==================================================*/
 footer{
 	background: #eaeaea;
-	padding: 20px 0px;
+	padding: 0px 0px;
 }
 .copy{
 	font-size: 14px;
@@ -288,6 +288,10 @@ a .rss:hover{
 /*=================================================
 ||				11. Others
 ==================================================*/
+.widget{
+	text-align: center;
+}
+
 /*Testimonial*/
 .testimonial{
 	background: url('../images/testimonial.png');
