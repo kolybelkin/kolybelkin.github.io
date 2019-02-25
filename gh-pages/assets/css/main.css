@@ -52,7 +52,6 @@ body
 .header
 {
 	background: url('../images/multipage-header-min.jpg');
-	
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -63,12 +62,12 @@ body
 
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 415px) {
 	.header{
 		background: url('../images/multipage-header-moblie.jpg');
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: cover;
+		background-size: 140%; /* cover */
 		background-attachment: fixed;
 		height: 100vh;
 		color: #313131; /*colour of central text */
