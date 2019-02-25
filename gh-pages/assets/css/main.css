@@ -63,7 +63,7 @@ body
 
 }
 
-@media only handheld {
+@media only screen and (max-width: 600px) {
 	.header{
 		background: url('../images/multipage-header-moblie.jpg');
 		background-repeat: no-repeat;
