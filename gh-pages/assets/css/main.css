@@ -67,7 +67,7 @@ body
 		background: url('../images/multipage-header-moblie.jpg');
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 140%; /* cover */
+		background-size: cover;
 		background-attachment: fixed;
 		height: 100vh;
 		color: #313131; /*colour of central text */
