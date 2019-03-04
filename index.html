@@ -27,26 +27,31 @@
 		<title>Ателье Елена | Пошив одежды</title>
 
 		<link rel="icon" href="gh-pages/assets/images/favicon.ico" type="image/x-icon"/>
-		<link rel="preload" as="style" href="gh-pages/assets/css/bootstrap.min.css" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="gh-pages/assets/css/ionicons.min.css" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="gh-pages/assets/css/owl.carousel.css" onload="this.rel='stylesheet'"/>
-		<link rel="preload" as="style" href="gh-pages/assets/css/owl.theme.css" onload="this.rel='stylesheet'"/>
-	    <link rel="preload" as="style" href="gh-pages/assets/css/main.css" onload="this.rel='stylesheet'"/>
-	    <link rel="preload" as="style" href="gh-pages/assets/css/about.css" onload="this.rel='stylesheet'"/>
-	    <link rel="preload" as="style" href="gh-pages/assets/css/contact.css" onload="this.rel='stylesheet'"/>
-	    <link rel="preload" as="style" href="gh-pages/assets/css/service.css" onload="this.rel='stylesheet'"/>
-	    <link rel="preload" as="style" href="gh-pages/assets/css/one-page-style.css" onload="this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="gh-pages/assets/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="gh-pages/assets/css/ionicons.min.css" onload="this.onload=null;this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="gh-pages/assets/css/owl.carousel.css" onload="this.onload=null;this.rel='stylesheet'"/>
+		<link rel="preload" as="style" href="gh-pages/assets/css/owl.theme.css" onload="this.onload=null;this.rel='stylesheet'"/>
+	    <link rel="preload" as="style" href="gh-pages/assets/css/main.css" onload="this.onload=null;this.rel='stylesheet'"/>
+	    <link rel="preload" as="style" href="gh-pages/assets/css/about.css" onload="this.onload=null;this.rel='stylesheet'"/>
+	    <link rel="preload" as="style" href="gh-pages/assets/css/contact.css" onload="this.onload=null;this.rel='stylesheet'"/>
+	    <link rel="preload" as="style" href="gh-pages/assets/css/service.css" onload="this.onload=null;this.rel='stylesheet'"/>
+	    <link rel="preload" as="style" href="gh-pages/assets/css/one-page-style.css" onload="this.onload=null;this.rel='stylesheet'"/>
 		
 		<!--for forefox that does not support preload-->
-		<link rel="stylesheet" href="gh-pages/assets/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="gh-pages/assets/css/ionicons.min.css"/>
-		<link rel="stylesheet" href="gh-pages/assets/css/owl.carousel.css"/>
-		<link rel="stylesheet" href="gh-pages/assets/css/owl.theme.css"/>
-	    <link rel="stylesheet" href="gh-pages/assets/css/main.css"/>
-	    <link rel="stylesheet" href="gh-pages/assets/css/about.css"/>
-	    <link rel="stylesheet" href="gh-pages/assets/css/contact.css"/>
-	    <link rel="stylesheet" href="gh-pages/assets/css/service.css"/>
-	    <link rel="stylesheet" href="gh-pages/assets/css/one-page-style.css"/>
+		<script>
+			if( navigator.userAgent.toLowerCase().indexOf('firefox') > -1 ){
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/bootstrap.min.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/ionicons.min.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/owl.carousel.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/owl.theme.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/main.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/about.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/contact.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/service.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+				var preloadLink = document.createElement("link"); preloadLink.href = "gh-pages/assets/css/one-page-style.css"; preloadLink.rel = "stylesheet"; document.head.appendChild(preloadLink);
+			
+			}
+		</script>
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 			<!--[if lt IE 9]>
 				<script src="gh-pages/assets/js/html5shiv.js"></script>
